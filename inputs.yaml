@@ -2,9 +2,9 @@ data:
   - name: SolidES_ITPro
     uid: 3604393912
     input: input/it_pro.txt
-    output: SolidES_ITPro.apkg
+    output: output/SolidES_ITPro.apkg
   - name: SolidES_BSC
     uid: 3604093881
     input: input/business_communication.txt
-    output: SolidES_BSC.apkg
+    output: output/SolidES_BSC.apkg
 

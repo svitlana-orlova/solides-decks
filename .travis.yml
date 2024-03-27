@@ -1,0 +1,21 @@
+language: python
+python:
+  - "3.8"
+
+script:
+  - echo "Installing dependencies..."
+  - mkdir output
+  - pip install genanki
+  - pip install pyyaml
+  - echo "Building project..."
+  - python build.py
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file_glob: true
+  file: "output/*"
+  skip_cleanup: true
+  on:
+    tags: true
+
